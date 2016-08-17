@@ -1,42 +1,58 @@
-
 <!DOCTYPE html>
-<html>
+<html >
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>The Toast Quote Machine</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic' rel='stylesheet' type='text/css'>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
   </head>
+
   <body>
 
-
-
-<div class="container-fluid">
+    <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 col-sm-4 buttonHolder"><button type="button" class="btn btn-custom btn-lg pull-right" id="mallory">TOAST ME</button></div>
-
+    
     <div id="textBlock" class="col-md-4 col-sm-4">
-
+      
       <blockquote>
-
+        
 <!-- text starts here-->
-
+  
         <h1 class="quote">The Toast Quote Machine</h1>
         <footer><a class="author" href="http://the-toast.net/" target="_blank">a willing foe, and sea room</a></footer>
         <br />
-
+  
 <!-- social media buttons -->
-
-        <a class="tweet-quote btn btn-custom btn-sm" role="button" target="_blank" href="https://twitter.com/intent/tweet?text=Take%20to%20the%20sea%20with%20the%20Toast%20Quote%20Machine!%20http://bit.ly/29v4Hzh"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a class="tumblr-quote btn btn-custom btn-sm" role="button" target="_blank" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=http://bit.ly/29v4Hzh&posttype=link&caption=The%20Toast%20Random%20Quote%20Machine&tags=the-toast,quotes"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+  
+        <a class="tweet-quote" target="_blank" href="https://twitter.com/intent/tweet?text=Take%20to%20the%20sea%20with%20the%20Toast%20Quote%20Machine!%20http://bit.ly/29v4Hzh"><button type="button" class="btn btn-custom btn-sm"><i class="fa fa-twitter" aria-hidden="true"></i></button></a>
+        <a class="tumblr-quote" target="_blank" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=http://bit.ly/29v4Hzh&posttype=link&caption=The%20Toast%20Random%20Quote%20Machine&tags=the-toast,quotes"><button id="tumblr" type="button" class="btn btn-custom btn-sm"><i class="fa fa-tumblr" aria-hidden="true"></i></button></a>
       </blockquote>
       <p>by <a href="http://codepen.io/radditude/">radditude</a> for <a href="https://www.freecodecamp.com/challenges/build-a-random-quote-machine">Free Code Camp</a></p>
     </div>
 
   </div>
 </div>
-<script src="script.js"></script>
-</body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
 </html>
