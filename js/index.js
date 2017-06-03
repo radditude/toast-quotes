@@ -3,6 +3,12 @@ $(document).ready(function() {
   // most of this script is quotes
 
   var quotes = [
+    ["We are a tiny pinprick of life in a sea of death, and it will swallow us all.", "Mallory Ortberg", "the-toast.net/2013/09/03/another-lifeless-planet-found/"],
+    ["We're here, and we're alive, and we're young, and we're eating potatoes with eggs on them.", "Mallory Ortberg", "#"],
+    ["You have to learn to respect the mushroom before you can hunt for it, lest you anger the other things that live under roots and in between trees.", "Mallory Ortberg", "#"],
+    ["Sure, generations come and go, but at least the earth is still here. Never lost the earth yet.", "Mallory Ortberg", "the-toast.net/2013/12/28/ecclesiastes-for-optimists/"],
+    ["The world will never stop recommending almonds to you. And yet you must resist them.", "Mallory Ortberg", "the-toast.net/2013/09/27/almonds-suck/"],
+    ["All fish can be flying fish if you put them in the sky.", "Mallory Ortberg", "#"],
     ["At the time, of course, we did not yet know that loving a man who enjoys Kerouac novels was morally wrong.", "Mallory Ortberg", "the-toast.net/2013/12/13/femslash-friday-rory-and-paris/"],
     ["And on the last day of the Sexiest Man Alive’s reign, he shall baptize the new Man in his blood, and with his blood shall the new Man be consecrated.", "Mallory Ortberg", "the-toast.net/2013/11/20/adam-levine-sexiest-man-alive/"],
     ["Enter HAMLET, skateboarding.", "Mallory Ortberg", "the-toast.net/2014/02/11/dirtbag-hamlet/"],
@@ -45,12 +51,12 @@ $(document).ready(function() {
 
   var colors = ["#51a77e", "#1f6745", "#349869", "#14464d", "#31814b", "#5ba792", "#82b8c3", "#217c75", "#18aaae", "#226666", "#448899", "#40417c", "#174f72", "#3f83aa", "#29709c", "#4e6f90", "#345372"];
 
-  var screenWidth = $(window).width(); 
+  var screenWidth = $(window).width();
   if (screenWidth < 768) {
     $("#mallory").removeClass("pull-right");
     $("#mallory").addClass("btn-block");
   }
-  
+
   // everything that happens when you click TOAST ME
 
   function getQuote() {
@@ -71,11 +77,11 @@ $(document).ready(function() {
         $(".quote").html(quote);
        $("footer").html(author + ' (<a href="http://' + link + '" target="_blank"><i>' +  'link' + '</i></a>)');
       });
-    
+
     //social media button auto-populate
     var regex = /(<([^>]+)>)/ig;
     var quoteText = quote.replace(regex, "");
-    
+
     $(".tweet-quote").attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(quoteText) + ' - ' + encodeURIComponent(author));
     $(".tumblr-quote").attr('href', 'https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=http://bit.ly/29v4Hzh&tags=the-toast,quotes,thetoastquotemachine&posttype=quote&show-via=bit.ly/29v4Hzh&caption='+encodeURIComponent(author)+'&content='+ encodeURIComponent(quoteText));
     $(".facebook-quote").attr('href', '')
@@ -89,7 +95,7 @@ $(document).ready(function() {
     //    }, 250);
     //    $("footer").html(author + ' (<a href="http://' + link + '" target="_blank"><i>' +  'link' + '</i></a>)');
   //    });
-    
+
     // color changes
     $("button").animate({
       backgroundColor: colors[color],
@@ -117,8 +123,8 @@ $(document).ready(function() {
 
   }
 
-  // event handlers  
-  
+  // event handlers
+
   $("#mallory").on("click", getQuote);
   $("#twitter").on("click", tweet);
 
