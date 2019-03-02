@@ -25,37 +25,44 @@
   color: #404040; 
   background-color: #ffffff; 
 }
+
 .buttonHolder {
   height: 70px;
   display: block;
 }
+
 .text {
   display: block;
 }
+
 .quote {
   font-weight: 600;
   color: #404040;
   line-height: 1.4em;
 }
+
 blockquote {
   border-color: #404040;
   font-family: Open Sans;
 }
+
 button {
   margin-top: 35px;
   font-weight: 400;
   text-align: right;
   font-family: Open Sans;
 }
+
 footer {
   font-weight: 400;
-  font-color: #404040;
 }
+
 p {
   font-family: Open Sans;
   font-weight: 400;
   color: #CCCCCC;
 }
+
 a {
   color: #CCCCCC;
   text-decoration: underline;
